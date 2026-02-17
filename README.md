@@ -8,6 +8,43 @@ Synaptic Canvas is a marketplace for Claude-powered tools and packages. Discover
 
 ## Available Packages
 
+### agent-team-mail
+
+CLI and daemon for mail-like messaging with Claude agent teams. Provides atomic file I/O over `~/.claude/teams/` with conflict detection, guaranteed delivery, and a plugin-ready daemon.
+
+**Features:**
+- Send messages to agents, broadcast to teams, read inboxes
+- Atomic file operations with platform-specific swaps
+- Conflict detection via BLAKE3 content hashing
+- Plugin daemon with CI monitor, GitHub issues bridge, and cross-computer sync
+- Cross-platform: macOS, Linux, and Windows
+
+**Installation:**
+```bash
+brew tap randlee/tap
+brew install agent-team-mail
+```
+
+**Usage:**
+```bash
+# Send a message to an agent
+atm send agent-name "Hello from the terminal"
+
+# Read your inbox
+atm read
+
+# Broadcast to a team
+atm broadcast "Team-wide announcement"
+
+# Check team status
+atm status
+```
+
+**Links:**
+- [GitHub Repository](https://github.com/randlee/agent-team-mail)
+- [Documentation](https://github.com/randlee/agent-team-mail#readme)
+- [crates.io](https://crates.io/crates/agent-team-mail)
+
 ### claude-history
 
 CLI tool for programmatic access to Claude Code's agent history storage.
