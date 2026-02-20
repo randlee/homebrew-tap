@@ -1,8 +1,8 @@
 # typed: false
 # frozen_string_literal: true
 
-class AgentTeamMail < Formula
-  desc "CLI and daemon for mail-like messaging with Claude agent teams"
+class Atm < Formula
+  desc "CLI and daemon for mail-like messaging with AI agent teams"
   homepage "https://github.com/randlee/agent-team-mail"
   version "0.11.0"
   license "MIT"
