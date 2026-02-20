@@ -15,6 +15,7 @@ class AgentTeamMail < Formula
       def install
         bin.install "atm"
         bin.install "atm-daemon"
+        bin.install "atm-agent-mcp"
       end
     end
     on_arm do
@@ -24,6 +25,7 @@ class AgentTeamMail < Formula
       def install
         bin.install "atm"
         bin.install "atm-daemon"
+        bin.install "atm-agent-mcp"
       end
     end
   end
@@ -37,6 +39,7 @@ class AgentTeamMail < Formula
         def install
           bin.install "atm"
           bin.install "atm-daemon"
+          bin.install "atm-agent-mcp"
         end
       end
     end
