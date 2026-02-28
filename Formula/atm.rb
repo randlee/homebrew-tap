@@ -7,13 +7,13 @@
 class Atm < Formula
   desc "CLI and daemon for mail-like messaging with Claude agent teams"
   homepage "https://github.com/randlee/agent-team-mail"
-  version "0.23.0"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/randlee/agent-team-mail/releases/download/v0.23.0/atm_0.23.0_x86_64-apple-darwin.tar.gz"
-      sha256 "52f5ada0595e5b5742de7c02202bf1654b96034fe7a657b14c824680d6562867"
+      url "https://github.com/randlee/agent-team-mail/releases/download/v0.24.0/atm_0.24.0_x86_64-apple-darwin.tar.gz"
+      sha256 "236de7727ab0eb6bbafeff678a2f0a62b0b3150d6e8823c734bbd2eaedc2462c"
 
       def install
         bin.install "atm"
@@ -23,8 +23,8 @@ class Atm < Formula
       end
     end
     on_arm do
-      url "https://github.com/randlee/agent-team-mail/releases/download/v0.23.0/atm_0.23.0_aarch64-apple-darwin.tar.gz"
-      sha256 "538b64592809869bd13116e3910ad41718a12aeaf003f73c1dcbcfd0b2d1ff54"
+      url "https://github.com/randlee/agent-team-mail/releases/download/v0.24.0/atm_0.24.0_aarch64-apple-darwin.tar.gz"
+      sha256 "cc1053724cf7927bb013c86529ebceec0918a2e1a785c7bb2f1999542067ff90"
 
       def install
         bin.install "atm"
@@ -38,8 +38,8 @@ class Atm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randlee/agent-team-mail/releases/download/v0.23.0/atm_0.23.0_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "7cd393f25839f59e7d83f837a957600f24a02d883f50184006915460b15b0cf2"
+        url "https://github.com/randlee/agent-team-mail/releases/download/v0.24.0/atm_0.24.0_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "cade91ec36ac2e9e99db6d29bd2d1a47624ca4c377b64ab03d3bb3aae523c0bd"
 
         def install
           bin.install "atm"
