@@ -4,13 +4,13 @@
 class Scmux < Formula
   desc "tmux session manager for multi-agent Claude Code teams"
   homepage "https://github.com/randlee/scmux"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/scmux/releases/download/v0.4.1/scmux-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "b4e0d7227b7fc608c1269c175bcd0d9780b0569392a3a9ca48fd2b2328eb662a"
+      url "https://github.com/randlee/scmux/releases/download/v0.5.0/scmux-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "7819318bcdaac8a79a715cc336ef08b66c5df693c87044784e334020f106759c"
 
       def install
         bin.install "scmux"
@@ -22,8 +22,8 @@ class Scmux < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randlee/scmux/releases/download/v0.4.1/scmux-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "773c75d5a07f27b3260af5d73f234835c8e156c646c00860875f9633aaf356e1"
+        url "https://github.com/randlee/scmux/releases/download/v0.5.0/scmux-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "2c32226a809525f6c7e0b2d9851c66717a7b9e53b0145117789920dad92795bc"
 
         def install
           bin.install "scmux"
