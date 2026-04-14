@@ -4,21 +4,21 @@
 class Atm < Formula
   desc "CLI for mail-like messaging with Claude agent teams"
   homepage "https://github.com/randlee/atm-core"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/randlee/atm-core/releases/download/v1.0.1/atm_1.0.1_aarch64-apple-darwin.tar.gz"
-      sha256 "9c8b05f8e8bf540510168db9216efe74dd2c4a2f9c01cba117d28daaa2e3e76f"
+      url "https://github.com/randlee/atm-core/releases/download/v1.0.2/atm_1.0.2_aarch64-apple-darwin.tar.gz"
+      sha256 "b64f0c56e8117537cfd6d950bb2fdb02748c10c8cc6110dda89fac66363a4a63"
 
       def install
         bin.install "atm"
       end
     end
     on_arm do
-      url "https://github.com/randlee/atm-core/releases/download/v1.0.1/atm_1.0.1_aarch64-apple-darwin.tar.gz"
-      sha256 "9c8b05f8e8bf540510168db9216efe74dd2c4a2f9c01cba117d28daaa2e3e76f"
+      url "https://github.com/randlee/atm-core/releases/download/v1.0.2/atm_1.0.2_aarch64-apple-darwin.tar.gz"
+      sha256 "b64f0c56e8117537cfd6d950bb2fdb02748c10c8cc6110dda89fac66363a4a63"
 
       def install
         bin.install "atm"
@@ -29,8 +29,8 @@ class Atm < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randlee/atm-core/releases/download/v1.0.1/atm_1.0.1_aarch64-apple-darwin.tar.gz"
-        sha256 "9c8b05f8e8bf540510168db9216efe74dd2c4a2f9c01cba117d28daaa2e3e76f"
+        url "https://github.com/randlee/atm-core/releases/download/v1.0.2/atm_1.0.2_aarch64-apple-darwin.tar.gz"
+        sha256 "b64f0c56e8117537cfd6d950bb2fdb02748c10c8cc6110dda89fac66363a4a63"
 
         def install
           bin.install "atm"
