@@ -8,7 +8,7 @@ class ScCompose < Formula
 
   def install
     bin.install "bin/sc-compose"
-    pkgshare.install Dir["share/sc-compose/examples/*"]
+    (pkgshare/"examples").install Dir["share/sc-compose/examples/*"]
   end
 
   test do
