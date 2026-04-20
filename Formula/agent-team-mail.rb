@@ -7,6 +7,8 @@ class AgentTeamMail < Formula
   version "1.0.0"
   license "MIT"
 
+  depends_on "randlee/tap/sc-compose"
+
   on_macos do
     on_intel do
       url "https://github.com/randlee/atm-core/releases/download/v1.0.0/atm_1.0.0_x86_64-apple-darwin.tar.gz"
