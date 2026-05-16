@@ -5,21 +5,21 @@
 class Sc < Formula
   desc "Dolt-backed package manager for Claude Code skills"
   homepage "https://github.com/randlee/synaptic-canvas-dolt"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.3.0/sc_0.3.0_darwin_amd64.tar.gz"
-      sha256 "95c185c412198645a97e51ad94ef85bd49c2af58da9b2b4efa9ad52fcea70c5d"
+      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.4.0/sc_0.4.0_darwin_amd64.tar.gz"
+      sha256 "404109be23e9dd0b43ee7c2ebdb1d09c53626aacc024220ad35be1d9eb0efaa5"
 
       define_method(:install) do
         bin.install "sc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.3.0/sc_0.3.0_darwin_arm64.tar.gz"
-      sha256 "dff56f9da2c389ee1bfed8fd7b7acec17c33232639a0ae354f0573c54223e0b8"
+      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.4.0/sc_0.4.0_darwin_arm64.tar.gz"
+      sha256 "35ebf26b98e7181f155f0f2495ebe1520ca53d6560b746e868670d436d49d073"
 
       define_method(:install) do
         bin.install "sc"
@@ -29,15 +29,15 @@ class Sc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.3.0/sc_0.3.0_linux_amd64.tar.gz"
-      sha256 "d8a44bf328141d7a7b12fa8b3746bc048e8679e12fc7138903b8c2f7ffca1fe8"
+      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.4.0/sc_0.4.0_linux_amd64.tar.gz"
+      sha256 "15dd50afe508a9571e35c4aa88b9465b0c5786f20cdf2bd4bdafba35a415bcc2"
       define_method(:install) do
         bin.install "sc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.3.0/sc_0.3.0_linux_arm64.tar.gz"
-      sha256 "d77c35ba08d8f6c065747037fe2cf38da05ae5276c12f8049858d05792323b80"
+      url "https://github.com/randlee/synaptic-canvas-dolt/releases/download/v0.4.0/sc_0.4.0_linux_arm64.tar.gz"
+      sha256 "41a86981abb10f04bf82b54f8f9537a408bec592753bd207aaf75883ecda3e13"
       define_method(:install) do
         bin.install "sc"
       end
