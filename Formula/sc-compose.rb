@@ -1,9 +1,9 @@
 class ScCompose < Formula
   desc "Standalone CLI for template composition"
   homepage "https://github.com/randlee/sc-compose"
-  url "https://github.com/randlee/sc-compose/releases/download/v1.0.1/sc-compose_1.0.1_aarch64-apple-darwin.tar.gz"
-  sha256 "71556cd6663c38a31281b5f381da49aa93cfd9b3cadb907bb75dee229866b2a6"
-  version "1.0.1"
+  url "https://github.com/randlee/sc-compose/releases/download/v1.1.0/sc-compose_1.1.0_aarch64-apple-darwin.tar.gz"
+  sha256 "f8a2c7634060134e644f8bbbda884a82e906adb26a4bd7be77b794c3803fbb1b"
+  version "1.1.0"
   license "MIT"
 
   def install
