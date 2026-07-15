@@ -1,49 +1,45 @@
-# Synaptic Canvas Homebrew Tap
+# randlee Homebrew Tap
 
-Homebrew formulas for [Synaptic Canvas](https://github.com/randlee/synaptic-canvas) packages.
-
-## About Synaptic Canvas
-
-Synaptic Canvas is a marketplace for Claude-powered tools and packages. Discover, install, and manage intelligent development tools built with Claude AI.
+Homebrew formulas for selected `randlee` CLI tools.
 
 ## Available Packages
 
-### agent-team-mail
+### atm
 
-CLI and daemon for mail-like messaging with Claude agent teams. Provides atomic file I/O over `~/.claude/teams/` with conflict detection, guaranteed delivery, and a plugin-ready daemon.
+CLI and daemon for mail-like messaging with Claude agent teams.
 
 **Features:**
-- Send messages to agents, broadcast to teams, read inboxes
-- Atomic file operations with platform-specific swaps
-- Conflict detection via BLAKE3 content hashing
-- Plugin daemon with CI monitor, GitHub issues bridge, and cross-computer sync
+- Send, read, ack, clear, doctor, and log workflows
+- Shared daemon-backed mailbox runtime
+- Team/member administration
+- Installed user documentation bundle
 - Cross-platform: macOS, Linux, and Windows
 
 **Installation:**
 ```bash
 brew tap randlee/tap
-brew install agent-team-mail
+brew install atm
 ```
 
 **Usage:**
 ```bash
-# Send a message to an agent
-atm send agent-name "Hello from the terminal"
+# Show version
+atm --version
 
-# Read your inbox
-atm read
+# Run diagnostics
+atm doctor --json
 
-# Broadcast to a team
-atm broadcast "Team-wide announcement"
+# Show team roster
+atm members --team <team>
 
-# Check team status
-atm status
+# Send a message
+atm send <recipient> "hello"
 ```
 
 **Links:**
-- [GitHub Repository](https://github.com/randlee/agent-team-mail)
-- [Documentation](https://github.com/randlee/agent-team-mail#readme)
-- [crates.io](https://crates.io/crates/agent-team-mail)
+- [GitHub Repository](https://github.com/randlee/atm-core)
+- [Releases](https://github.com/randlee/atm-core/releases)
+- [crates.io](https://crates.io/crates/atm)
 
 ### claude-history
 
@@ -109,10 +105,11 @@ brew upgrade <package-name>
 
 ## Contributing
 
-This tap is automatically updated by [GoReleaser](https://goreleaser.com/) when new versions are released. 
+This tap may be updated automatically when new versions are released, but formula
+changes should still be checked against the actual published archive layout.
 
 To request a new package or report issues:
-- Visit the [Synaptic Canvas repository](https://github.com/randlee/synaptic-canvas)
+- Visit the relevant package repository
 - Open an issue in the specific package repository
 
 ## License
@@ -122,4 +119,3 @@ Individual packages have their own licenses. See each package's repository for d
 ---
 
 **Maintained by**: [randlee](https://github.com/randlee)  
-**Part of**: [Synaptic Canvas](https://github.com/randlee/synaptic-canvas)

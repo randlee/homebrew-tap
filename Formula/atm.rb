@@ -13,7 +13,7 @@ class Atm < Formula
       sha256 "fbcd776abd06b8f4ebdeec4c270b9b0ade192ec40551e1e5aa97b308e4447e6b"
 
       def install
-        bin.install "atm"
+        bin.install "bin/atm", "bin/atm-daemon"
       end
     end
     on_arm do
@@ -21,7 +21,7 @@ class Atm < Formula
       sha256 "f6b7428c55d0cc014a588cbd2ff442f959c502a44dc11c5394d1d2c7f67bcddb"
 
       def install
-        bin.install "atm"
+        bin.install "bin/atm", "bin/atm-daemon"
       end
     end
   end
@@ -33,7 +33,7 @@ class Atm < Formula
         sha256 "22d9fc6e74e453fc310a684e1e83b92bc71faa9ec47592b0bdf835feeb65cae1"
 
         def install
-          bin.install "atm"
+          bin.install "bin/atm", "bin/atm-daemon"
         end
       end
     end
