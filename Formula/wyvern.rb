@@ -10,7 +10,7 @@ class Wyvern < Formula
   on_macos do
     on_arm do
       url "https://github.com/randlee/wyvern/releases/download/v0.1.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "194703e79c826afa12b6daee2ba62b6850d50af6fe0e347454b5c938d5893fdf"
+      sha256 "42172933ad67696fe345069d777b64ac5a1d6a232c204b044673e7822190fe56"
 
       def install
         bin.install "wyvern"
@@ -20,7 +20,7 @@ class Wyvern < Formula
     end
     on_intel do
       url "https://github.com/randlee/wyvern/releases/download/v0.1.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "194703e79c826afa12b6daee2ba62b6850d50af6fe0e347454b5c938d5893fdf"
+      sha256 "42172933ad67696fe345069d777b64ac5a1d6a232c204b044673e7822190fe56"
 
       def install
         bin.install "wyvern"
