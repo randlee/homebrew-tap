@@ -4,21 +4,21 @@
 class AgentTeamMail < Formula
   desc "CLI for mail-like messaging with Claude agent teams"
   homepage "https://github.com/randlee/atm-core"
-  version "1.3.1"
+  version "1.4.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/randlee/atm-core/releases/download/v1.3.1/atm_1.3.1_x86_64-apple-darwin.tar.gz"
-      sha256 "fbcd776abd06b8f4ebdeec4c270b9b0ade192ec40551e1e5aa97b308e4447e6b"
+      url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_x86_64-apple-darwin.tar.gz"
+      sha256 "34b8a08b0fa2fff64013072a94f0e167628b12eb8caccacdb27da36cb31759d4"
 
       def install
         bin.install "atm"
       end
     end
     on_arm do
-      url "https://github.com/randlee/atm-core/releases/download/v1.3.1/atm_1.3.1_aarch64-apple-darwin.tar.gz"
-      sha256 "f6b7428c55d0cc014a588cbd2ff442f959c502a44dc11c5394d1d2c7f67bcddb"
+      url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_aarch64-apple-darwin.tar.gz"
+      sha256 "08dd9c27bb67b9e107ef1f5d18e5d042b644ca407068351ab148e17df6feebbb"
 
       def install
         bin.install "atm"
@@ -29,8 +29,8 @@ class AgentTeamMail < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/randlee/atm-core/releases/download/v1.3.1/atm_1.3.1_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "22d9fc6e74e453fc310a684e1e83b92bc71faa9ec47592b0bdf835feeb65cae1"
+        url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_x86_64-unknown-linux-gnu.tar.gz"
+        sha256 "aecda8942e0942b00a851959211aa1ecdbfa5bacdfe819cec0f367d103f65a10"
 
         def install
           bin.install "atm"
