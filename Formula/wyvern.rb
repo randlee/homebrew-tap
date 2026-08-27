@@ -4,13 +4,13 @@
 class Wyvern < Formula
   desc "Native webview dialogs for CLI agents (JSON in / JSON out)"
   homepage "https://github.com/randlee/wyvern"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/wyvern/releases/download/v0.4.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "cad9f105feb47c2919d38f4c9baffff1f2b3d7010e1839a8ede76b329ca3721d"
+      url "https://github.com/randlee/wyvern/releases/download/v0.5.0/wyvern-macos-aarch64.tar.gz"
+      sha256 "740739df29448076b77dcc533feac1cfd3b4185191585d5df290f4d75e3aa4a3"
 
       def install
         bin.install "wyvern"
@@ -19,8 +19,8 @@ class Wyvern < Formula
       end
     end
     on_intel do
-      url "https://github.com/randlee/wyvern/releases/download/v0.4.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "cad9f105feb47c2919d38f4c9baffff1f2b3d7010e1839a8ede76b329ca3721d"
+      url "https://github.com/randlee/wyvern/releases/download/v0.5.0/wyvern-macos-aarch64.tar.gz"
+      sha256 "740739df29448076b77dcc533feac1cfd3b4185191585d5df290f4d75e3aa4a3"
 
       def install
         bin.install "wyvern"
