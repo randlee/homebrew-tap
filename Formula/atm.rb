@@ -1,45 +1,33 @@
-# typed: false
-# frozen_string_literal: true
-
 class Atm < Formula
-  desc "CLI for mail-like messaging with Claude agent teams"
+  desc "CLI for local agent team mail workflows"
   homepage "https://github.com/randlee/atm-core"
-  version "1.4.3"
-  license "MIT"
+  version "1.4.4"
+  license "MIT OR Apache-2.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_x86_64-apple-darwin.tar.gz"
-      sha256 "34b8a08b0fa2fff64013072a94f0e167628b12eb8caccacdb27da36cb31759d4"
-
-      def install
-        bin.install "bin/atm", "bin/atm-daemon"
-      end
-    end
     on_arm do
-      url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_aarch64-apple-darwin.tar.gz"
-      sha256 "08dd9c27bb67b9e107ef1f5d18e5d042b644ca407068351ab148e17df6feebbb"
+      url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_aarch64-apple-darwin.tar.gz"
+      sha256 "dde4f7761fbeb410e595a5bff065e7ce79559eb0d154c5c6507427f6af2016c7"
+    end
 
-      def install
-        bin.install "bin/atm", "bin/atm-daemon"
-      end
+    on_intel do
+      url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_x86_64-apple-darwin.tar.gz"
+      sha256 "b9fc9dea0daac3da87f0b9c3946edbf4b2eeeb7a5538003c668da3911e938c9e"
     end
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/randlee/atm-core/releases/download/v1.4.3/atm_1.4.3_x86_64-unknown-linux-gnu.tar.gz"
-        sha256 "aecda8942e0942b00a851959211aa1ecdbfa5bacdfe819cec0f367d103f65a10"
+    url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "03009450e059ca7a6fb18e6725e10e79b8fb209d20d675665346744e1b37a202"
+  end
 
-        def install
-          bin.install "bin/atm", "bin/atm-daemon"
-        end
-      end
-    end
+  def install
+    bin.install "bin/atm"
+    bin.install "bin/atm-daemon"
+    ("pkgshare").install Dir["share/doc/atm/*"]
   end
 
   test do
-    system "#{bin}/atm", "--version"
+    assert_match "CLI for local agent team mail workflows", shell_output("#{bin}/" + "atm" + " " + "--help")
   end
 end
