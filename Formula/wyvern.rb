@@ -1,36 +1,33 @@
-# typed: false
-# frozen_string_literal: true
-
 class Wyvern < Formula
   desc "Native webview dialogs for CLI agents (JSON in / JSON out)"
   homepage "https://github.com/randlee/wyvern"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/wyvern/releases/download/v0.5.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "740739df29448076b77dcc533feac1cfd3b4185191585d5df290f4d75e3aa4a3"
-
-      def install
-        bin.install "wyvern"
-        bin.install "wyvern-viewer"
-        (share/"wyvern").install "share/wyvern/ui"
-      end
+      url "https://github.com/randlee/wyvern/releases/download/v0.6.0/wyvern_0.6.0_aarch64-apple-darwin.tar.gz"
+      sha256 "b5f5b986868d65b37d39966d7e9fa0c2bb6fd35fd0675397cbe3b4f77dc6b9dc"
     end
-    on_intel do
-      url "https://github.com/randlee/wyvern/releases/download/v0.5.0/wyvern-macos-aarch64.tar.gz"
-      sha256 "740739df29448076b77dcc533feac1cfd3b4185191585d5df290f4d75e3aa4a3"
 
-      def install
-        bin.install "wyvern"
-        bin.install "wyvern-viewer"
-        (share/"wyvern").install "share/wyvern/ui"
-      end
+    on_intel do
+      url "https://github.com/randlee/wyvern/releases/download/v0.6.0/wyvern_0.6.0_x86_64-apple-darwin.tar.gz"
+      sha256 "325880ca0edf0d2e0afda4cf2ef4818f1dc2c3d7fe3d5811cf55a3893bc43cc6"
     end
   end
 
+  on_linux do
+    url "https://github.com/randlee/wyvern/releases/download/v0.6.0/wyvern_0.6.0_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "549d7898e717475cbb0a1412cb768f6d0cb08053acc461dccb8e4fe66854315c"
+  end
+
+  def install
+    bin.install "bin/wyvern"
+    bin.install "bin/wyvern-viewer"
+    ("share"/"wyvern"/"ui").install Dir["share/wyvern/ui/*"]
+  end
+
   test do
-    assert_match "wyvern", shell_output("#{bin}/wyvern --help", 2)
+    assert_match "Usage: wyvern", shell_output("#{bin}/" + "wyvern" + " " + "--help")
   end
 end
