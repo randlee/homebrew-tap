@@ -24,10 +24,10 @@ class Atm < Formula
   def install
     bin.install "bin/atm"
     bin.install "bin/atm-daemon"
-    ("pkgshare").install Dir["share/doc/atm/*"]
+    (pkgshare).install Dir["share/doc/atm/*"]
   end
 
   test do
-    assert_match "CLI for local agent team mail workflows", shell_output("#{bin}/" + "atm" + " " + "--help")
+    assert_match "ATM CLI", shell_output("#{bin}/" + "atm" + " " + "--help")
   end
 end
