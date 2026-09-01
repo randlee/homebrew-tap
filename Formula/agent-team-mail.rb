@@ -4,6 +4,8 @@ class AgentTeamMail < Formula
   version "1.4.4"
   license "MIT OR Apache-2.0"
 
+  depends_on "randlee/tap/sc-compose"
+
   on_macos do
     on_arm do
       url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_aarch64-apple-darwin.tar.gz"
