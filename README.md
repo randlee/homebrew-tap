@@ -15,7 +15,6 @@ Homebrew adds the tap automatically when using the fully qualified formula name.
 | `sc` | Dolt-backed package manager for Claude Code skills | [synaptic-canvas-dolt](https://github.com/randlee/synaptic-canvas-dolt) | `brew install randlee/tap/sc` |
 | `sc-compose` | Template-composition CLI | [sc-compose](https://github.com/randlee/sc-compose) | `brew install randlee/tap/sc-compose` |
 | `sc-lint` | Rust workspace linting and analysis toolset | [sc-lint](https://github.com/randlee/sc-lint) | `brew install randlee/tap/sc-lint` |
-| `sc-lint-boundary` | Legacy compatibility formula for the sc-lint boundary analyzer | [sc-lint](https://github.com/randlee/sc-lint) | `brew install randlee/tap/sc-lint-boundary` |
 | `scmux` | tmux session manager for multi-agent Claude Code teams | [scmux](https://github.com/randlee/scmux) | `brew install randlee/tap/scmux` |
 | `wyvern` | Native webview dialogs for CLI agents | [wyvern](https://github.com/randlee/wyvern) | `brew install randlee/tap/wyvern` |
 
