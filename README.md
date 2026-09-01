@@ -9,7 +9,7 @@ Homebrew adds the tap automatically when using the fully qualified formula name.
 
 | Package | Description | Repository | Install |
 | --- | --- | --- | --- |
-| `atm` | Local agent-team mail CLI and daemon | [atm-core](https://github.com/randlee/atm-core) | `brew install randlee/tap/atm` |
+| `agent-team-mail` | Local agent-team mail CLI and daemon | [atm-core](https://github.com/randlee/atm-core) | `brew install randlee/tap/agent-team-mail` |
 | `claude-history` | Query and export Claude Code agent history | [claude-history](https://github.com/randlee/claude-history) | `brew install randlee/tap/claude-history` |
 | `sc` | Dolt-backed package manager for Claude Code skills | [synaptic-canvas-dolt](https://github.com/randlee/synaptic-canvas-dolt) | `brew install randlee/tap/sc` |
 | `sc-compose` | Template-composition CLI | [sc-compose](https://github.com/randlee/sc-compose) | `brew install randlee/tap/sc-compose` |
