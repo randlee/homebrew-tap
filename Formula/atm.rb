@@ -1,24 +1,24 @@
 class Atm < Formula
   desc "CLI for local agent team mail workflows"
   homepage "https://github.com/randlee/atm-core"
-  version "1.4.4"
+  version "1.5.0"
   license "MIT OR Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_aarch64-apple-darwin.tar.gz"
-      sha256 "dde4f7761fbeb410e595a5bff065e7ce79559eb0d154c5c6507427f6af2016c7"
+      url "https://github.com/randlee/atm-core/releases/download/v1.5.0/atm_1.5.0_aarch64-apple-darwin.tar.gz"
+      sha256 "52bedf566a683667421a2594cc0437f5540e736a0e9e10077568325f4069e8a6"
     end
 
     on_intel do
-      url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_x86_64-apple-darwin.tar.gz"
-      sha256 "b9fc9dea0daac3da87f0b9c3946edbf4b2eeeb7a5538003c668da3911e938c9e"
+      url "https://github.com/randlee/atm-core/releases/download/v1.5.0/atm_1.5.0_x86_64-apple-darwin.tar.gz"
+      sha256 "62b20ab21813d518c4525171e0475377639c96b7ee583dcf8dc271226f77934a"
     end
   end
 
   on_linux do
-    url "https://github.com/randlee/atm-core/releases/download/v1.4.4/atm_1.4.4_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "03009450e059ca7a6fb18e6725e10e79b8fb209d20d675665346744e1b37a202"
+    url "https://github.com/randlee/atm-core/releases/download/v1.5.0/atm_1.5.0_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "a5765e1585b43926804c6642d20401901d5516e02dcdf427cee7ff7ea216a59b"
   end
 
   def install
