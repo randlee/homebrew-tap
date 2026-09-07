@@ -24,7 +24,7 @@ class Wyvern < Formula
   def install
     bin.install "bin/wyvern"
     bin.install "bin/wyvern-viewer"
-    ("share"/"wyvern"/"ui").install Dir["share/wyvern/ui/*"]
+    (share/"wyvern"/"ui").install Dir["share/wyvern/ui/*"]
   end
 
   test do
