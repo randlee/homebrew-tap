@@ -1,24 +1,24 @@
 class ScCompose < Formula
   desc "Standalone CLI for template composition"
   homepage "https://github.com/randlee/sc-compose"
-  version "1.6.1"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/sc-compose/releases/download/v1.6.1/sc-compose_1.6.1_aarch64-apple-darwin.tar.gz"
-      sha256 "23db29325d95c0f4bb94dead48d02883e00311e82dc66820fe51b1dd855b7168"
+      url "https://github.com/randlee/sc-compose/releases/download/v1.7.0/sc-compose_1.7.0_aarch64-apple-darwin.tar.gz"
+      sha256 "d7590a41921bef5a428bcbd33dda48006c6f6df5eafa83217cb820240fe6544b"
     end
 
     on_intel do
-      url "https://github.com/randlee/sc-compose/releases/download/v1.6.1/sc-compose_1.6.1_x86_64-apple-darwin.tar.gz"
-      sha256 "476147e831bc70f3142787241853d94d290029c0c8e66cfe83211a6d60aaa002"
+      url "https://github.com/randlee/sc-compose/releases/download/v1.7.0/sc-compose_1.7.0_x86_64-apple-darwin.tar.gz"
+      sha256 "6e32de8ee1fe627e64bd68f85dd4ba85d18fae2a8627d9dd8aeb4c42bdde674a"
     end
   end
 
   on_linux do
-    url "https://github.com/randlee/sc-compose/releases/download/v1.6.1/sc-compose_1.6.1_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "2e09706e0814f30adaacc88310db4ad629dcd9314d1182ecf12767686f828204"
+    url "https://github.com/randlee/sc-compose/releases/download/v1.7.0/sc-compose_1.7.0_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "5e2ffeb47072b26c47a44bfcc0d7068d0dfb8d5742feecc309fc535dab2e1c84"
   end
 
   def install
