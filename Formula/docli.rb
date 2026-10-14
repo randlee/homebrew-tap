@@ -1,24 +1,24 @@
 class Docli < Formula
   desc "Language-agnostic CLI documentation generator: HTML + Markdown from a neutral command-tree JSON"
   homepage "https://github.com/randlee/docli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/docli/releases/download/v0.1.0/docli_0.1.0_aarch64-apple-darwin.tar.gz"
-      sha256 "3b9974692482b0277c96780864b4eea15c0775bda5f059182e656aab859c7550"
+      url "https://github.com/randlee/docli/releases/download/v0.2.0/docli_0.2.0_aarch64-apple-darwin.tar.gz"
+      sha256 "6ad1e492068dd17ff76afefcce707f81080c2ed5a609ff9547af938050ba32b4"
     end
 
     on_intel do
-      url "https://github.com/randlee/docli/releases/download/v0.1.0/docli_0.1.0_x86_64-apple-darwin.tar.gz"
-      sha256 "0f08031b2fe562ea850283413c3384af84f6144c020c6922c211641970961f90"
+      url "https://github.com/randlee/docli/releases/download/v0.2.0/docli_0.2.0_x86_64-apple-darwin.tar.gz"
+      sha256 "b7b41b0decc6462b455a6985a09e040e9ad45ccee8b9a58f077bc0eed9167f5b"
     end
   end
 
   on_linux do
-    url "https://github.com/randlee/docli/releases/download/v0.1.0/docli_0.1.0_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a328c51a396134c2b3bd776c28977902e599fbe3b0c6b6e47fbe3d2cc21ae74a"
+    url "https://github.com/randlee/docli/releases/download/v0.2.0/docli_0.2.0_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "32f2e7b1c7308741c14ac14d11f1c33e9de8b7f1fb946ca5420ae31ea5f77b73"
   end
 
   def install
