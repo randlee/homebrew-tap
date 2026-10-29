@@ -1,24 +1,24 @@
 class ScLint < Formula
   desc "Reusable repository policy enforcement lint tools for Rust workspaces"
   homepage "https://github.com/randlee/sc-lint"
-  version "0.8.0"
+  version "0.8.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.0/sc-lint_0.8.0_aarch64-apple-darwin.tar.gz"
-      sha256 "2d13443fe3999752b5d106d111eadb84c47118e47596a498c6591f8d6ccc9857"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.2/sc-lint_0.8.2_aarch64-apple-darwin.tar.gz"
+      sha256 "423144ac4f8e528b6c3b22c1fa390431cdbb9461d2a2e4a36e7f8b0096af2a0e"
     end
 
     on_intel do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.0/sc-lint_0.8.0_x86_64-apple-darwin.tar.gz"
-      sha256 "d6ad291e803c2d00df598fd0365d0e0be8ed682edcea1fb7144f8828ae081311"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.2/sc-lint_0.8.2_x86_64-apple-darwin.tar.gz"
+      sha256 "d009668964c2057deef097986de3bdfca10951d5de643c24291492912066f08b"
     end
   end
 
   on_linux do
-    url "https://github.com/randlee/sc-lint/releases/download/v0.8.0/sc-lint_0.8.0_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "c17e1e62764ac69c21674a9eda43c1f5f1336f7601455167ccb0ad3669a7c9ca"
+    url "https://github.com/randlee/sc-lint/releases/download/v0.8.2/sc-lint_0.8.2_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "3e2ae7c909d3dae68dfc314ddc2d35e486527be8bff069c6ac1f82033932a1f6"
   end
 
   def install
