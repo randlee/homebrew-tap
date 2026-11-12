@@ -1,29 +1,29 @@
 class ScLintBoundary < Formula
   desc "Reusable repository policy enforcement lint tools for Rust workspaces"
   homepage "https://github.com/randlee/sc-lint"
-  version "0.8.6"
+  version "0.8.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.6/sc-lint_0.8.6_aarch64-apple-darwin.tar.gz"
-      sha256 "525bd559073899b2d5767802460721bb99e1b15cc6f129f68281fae010594d16"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.8/sc-lint_0.8.8_aarch64-apple-darwin.tar.gz"
+      sha256 "fca22eef8e185a4aa0b14f9eb4d391a2f9593e6bac4404bb048640073318c2c6"
     end
 
     on_intel do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.6/sc-lint_0.8.6_x86_64-apple-darwin.tar.gz"
-      sha256 "ce2155a7ddc45809ae28c0d3ca223cc52f2b41b0fd1f76c7d709cd7c32ae895d"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.8/sc-lint_0.8.8_x86_64-apple-darwin.tar.gz"
+      sha256 "5661c71c79474ccdfa1e65a1fd386df5cf5def1453ae55058c933ac1819713ce"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.6/sc-lint_0.8.6_x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a89c830c895215c120041488763c6316aff94e3a19be8eb585308225ed9abf2f"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.8/sc-lint_0.8.8_x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "08234293d16bd617f93632ff63ac345db850d9a4e4c9f3f7dedbbf404b0b22ba"
     end
     on_arm do
-      url "https://github.com/randlee/sc-lint/releases/download/v0.8.6/sc-lint_0.8.6_aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ea91fcab7809cd67af375d7221e813d343f5759fe10bc5d6b072cf24a18e412d"
+      url "https://github.com/randlee/sc-lint/releases/download/v0.8.8/sc-lint_0.8.8_aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "794e3ad20fabafeb020b9b2a62c2d549f4e18fd4fc3f0a49de20a105f6f7ca6e"
     end
   end
 
