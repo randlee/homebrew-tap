@@ -1,29 +1,31 @@
 class Decidr < Formula
   desc "TypeSafe decision client (decidr), sitr tree-sitter CLI, workspace crates, and Python bindings for Synaptic Canvas agents"
   homepage "https://github.com/randlee/sc-agent"
-  version "0.2.9"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/randlee/sc-agent/releases/download/v0.2.9/sc-agent_0.2.9_aarch64-apple-darwin.tar.gz"
-      sha256 "61a0739c9eb4ea254d300d34b38e951adc7d7f649757c498a05976a801cce5ad"
+      url "https://github.com/randlee/sc-agent/releases/download/v0.4.0/sc-agent_0.4.0_aarch64-apple-darwin.tar.gz"
+      sha256 "343633ba4cabe27622e0110af98354888029338b7869813c7e0d40f3af5256a2"
     end
 
     on_intel do
-      url "https://github.com/randlee/sc-agent/releases/download/v0.2.9/sc-agent_0.2.9_x86_64-apple-darwin.tar.gz"
-      sha256 "5e244635a0ab328e780e5dd0f261074ae098834880479e78d560a23d49d72cac"
+      url "https://github.com/randlee/sc-agent/releases/download/v0.4.0/sc-agent_0.4.0_x86_64-apple-darwin.tar.gz"
+      sha256 "1fcd1246c923632b80ba7e8831904cf7e977ae1d1d593c3eb278930db46b317f"
     end
   end
 
   on_linux do
-    url "https://github.com/randlee/sc-agent/releases/download/v0.2.9/sc-agent_0.2.9_x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "12ec4c3385b98da23cd59d6b3e8053c593ef56d0c34111f0e6402ea726311ab6"
+    url "https://github.com/randlee/sc-agent/releases/download/v0.4.0/sc-agent_0.4.0_x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "0dc0dfbaa7d4095c6cea964ba85c27e741e38e2a97c50801d07a1be34fa71587"
   end
 
   def install
     bin.install "bin/decidr"
     bin.install "bin/sitr"
+    (pkgshare/"docs"/"decidr").install Dir["docs/decidr/*"]
+    (pkgshare/"docs"/"sitr").install Dir["docs/sitr/*"]
   end
 
   test do
